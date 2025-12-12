@@ -14,13 +14,18 @@ jobs:
             gcc-c++ \
             git \
             make \
+            mingw64-gcc \
+            mingw64-gcc-c++ \
+            mingw64-binutils \
+            mingw64-headers \
+            mingw64-crt \
+            mingw64-winpthreads \
             mingw64-curl \
             mingw64-boost \
             mingw64-protobuf \
             mingw64-geos \
             mingw64-python3 \
-            protobuf-compiler
-      - uses: actions/checkout@v4
+            protobuf-compiler 
         with:
           submodules: recursive
           fetch-depth: 1
